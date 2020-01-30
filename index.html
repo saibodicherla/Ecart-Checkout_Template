@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robotos" content="noindex" />
+    <title>First</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body class="container">
+    <!-- Left Middle Section -->
+    <main class="main">
+      <header class="main__head">
+        <div class="main__head-icons">
+          <svg class="main__head-icons--icon">
+            <use
+              xlink:href="img/sprite.svg#icon-chevron-with-circle-left"
+            ></use>
+          </svg>
+          <span>Tillbehor</span>
+        </div>
+
+        <div class="main__head-heading">Kassa</div>
+      </header>
+      <div class="main__contacts">
+        <div class="main__contacts-content">
+          <div class="main__contacts-padding">
+            <span>Kassan</span>
+            <p>
+              o corrupti! Ipsam itaque labore asperiores blanditiis totam dicta
+              earum consequuntur.
+            </p>
+          </div>
+        </div>
+
+        <div class="main__contacts-dial">
+          <div class="main__contacts-padding">
+            <span>personnumber :</span>
+            <input
+              type="tel"
+              id="half1"
+              placeholder="012345"
+              min="0"
+              step="1"
+              maxlength="6"
+            =
+            />
+            <strong>-</strong>
+            <input
+              type="tel"
+              id="half2"
+              placeholder="1234"
+              min="0"
+              step="1"
+              maxlength="4"
+            />
+            <input type="hidden" />
+          </div>
+        </div>
+
+        <div class="main__contacts-details">
+          <div class="main__contacts-padding">
+            <span>Bo Goran</span>
+            <span>Ravgatan 1b</span>
+            <span>123 45 Boliden</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__conDetail">
+        <div class="main__conDetail-content">
+          <div class="main__conDetail-padding">
+            <span>Kassan</span>
+            <p>
+              o corrupti! Ipsam itaque labore asperiores blanditiis totam dicta
+              earum consequuntur.
+            </p>
+          </div>
+        </div>
+
+        <div class="main__conDetail-form">
+          <div class="main__conDetail-padding1">
+            <span>mobile number:</span><br />
+            <div class="main__conDetail-form--icons">
+              <input
+                type="tel"
+                id="phone2"
+                placeholder="0123456789"
+                min="0"
+                maxlength="10"
+                step="1"
+                disabled
+              />
+              <svg id="togglePhone" class="main__conDetail-form--icons---icon">
+                <use xlink:href="img/sprite.svg#icon-pencil"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__orders">
+        <div class="top">
+          <div class="top__item">
+            <img class="top__item-img" src="img/bosch.png" alt="" srcset="" />
+            <div class="top__item-content">
+              <span>Bosch</span>
+              <span>PST 700 E</span>
+            </div>
+            <div class="top__item-no">
+              <button onclick="incrementValue()">
+                <svg class="top__item-no--icon">
+                  <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
+                </svg>
+              </button>
+              <input type="text" id="number" value="1" min="0" />
+
+              <button onclick="fremove()">
+                <svg class="top__item-no--icon">
+                  <use xlink:href="img/sprite.svg#icon-circle-with-minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="top__item-price" id="product-price"></div>
+          </div>
+          <div class="top__item">
+            <img class="top__item-img" src="img/bosch.png" alt="" srcset="" />
+            <div class="top__item-content">
+              <span>Bosch</span>
+              <span>10-delars sticksgblad tra/metall</span>
+            </div>
+            <div class="top__item-no">
+              <button onclick="add()">
+                <svg class="top__item-no--icon">
+                  <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
+                </svg>
+              </button>
+              <input type="text" id="number1" value="1" min="0" />
+
+              <button onclick="remove()">
+                <svg class="top__item-no--icon">
+                  <use xlink:href="img/sprite.svg#icon-circle-with-minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="top__item-price" id="price"></div>
+          </div>
+        </div>
+        <div class="mid"></div>
+        <div class="bottom">
+          <div class="bottom__item">
+            <svg class="bottom__item-icon1">
+              <use xlink:href="img/sprite.svg#icon-truck"></use>
+            </svg>
+           
+        
+            <div id="first" class="bottom__item-content">
+            <input type="radio" name="radio" value="79">
+              <svg class="bottom__item-icon activeCheck">
+                <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+              </svg>
+              <svg class="bottom__item-icon inactiveCheck">
+                    <use xlink:href="img/sprite.svg#icon-circle"></use>
+                  </svg>
+            </input>
+            <input type="hidden" id="shippingHidden" value="79" />
+              <span>Hemleverance</span>
+            </div>
+            <div class="bottom__item-no"></div>
+            <div class="bottom__item-price">79 kr</div>
+          </div>
+          <div class="bottom__item">
+            <svg class="bottom__item-icon1">
+              <use xlink:href="img/sprite.svg#icon-office"></use>
+            </svg>
+            <div id="second" class="bottom__item-content">
+            <input type="radio" name="radio" value="0" >
+            <svg class="bottom__item-icon activeCheck">
+                    <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+            </svg>
+            <svg class="bottom__item-icon inactiveCheck">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+            </svg>
+            
+            </input>
+              <span>Hamta i butik</span>
+            </div>
+          </div>
+          <div class="bottom__item">
+            <span class="bottom__item-icon"></span>
+            <div class="bottom__item-content"></div>
+            <div class="bottom__item-no">
+              <span>ATT betala:</span>
+              <span class="min">Varav moms</span>
+            </div>
+            <div class="bottom__item-price">
+              <span id="totalPrice">817kr</span>
+              <span class="min">204kr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- right SideBAR -->
+    <div class="rightside">
+      <div class="rightside__content">
+        <h3>Kassan</h3>
+        <p>
+          eupillo deserunt providendeserunt providendeserunt provident quasi
+          odio amet recusandae in architecto corrupti! Ipsam itaque labore
+          asperiores blanditiis totam dicta earum consequuntur.
+        </p>
+      </div>
+      <div class="rightside__pad">
+        <form action="#" method="post" id="form">
+          <button type="button" class="rightside__pad-btn number" value="1">
+            1
+          </button>
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="2"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="3"
+          >
+            3
+          </button>
+          <br />
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="4"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="5"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="6"
+          >
+            6
+          </button>
+          <br />
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="7"
+          >
+            7
+          </button>
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="8"
+          >
+            8
+          </button>
+          <button
+            type="button"
+            type="button"
+            class="rightside__pad-btn number"
+            value="9"
+          >
+            9
+          </button>
+          <br />
+          <button type="button" id="del" class="rightside__pad-btn del">
+            <svg class="rightside__pad-btn--icon">
+              <use xlink:href="img/sprite.svg#icon-cancel-circle"></use>
+            </svg>
+          </button>
+          <button type="button" class="rightside__pad-btn number" value="0">
+            0
+          </button>
+          <button type="button" id="dial" class="rightside__pad-btn" value="">
+            <svg class="rightside__pad-btn--icon">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="frightside">
+      <div class="frightside__icons">
+        <span>bestall</span>
+        <a href="#">
+          <svg class="frightside__icons-icon">
+            <use
+              xlink:href="img/sprite.svg#icon-chevron-with-circle-right"
+            ></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__back">
+        <div class="footer__back-icons">
+          <a href="#">
+            <svg class="footer__back-icons--icon">
+              <use xlink:href="img/sprite.svg#icon-undo2"></use>
+            </svg>
+          </a>
+          <span>Fortsatt handla</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
