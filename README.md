@@ -1,4 +1,4 @@
-## shoppingCart Template for frontend
+## cart-Checkout Template for frontend
 
 # Purpose
 
