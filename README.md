@@ -1,4 +1,4 @@
-## shoppingCart frontend development
+## shoppingCart Template for frontend
 
 # Purpose
 
