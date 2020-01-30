@@ -30,7 +30,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #ffffff;
-  background-color: #cd5904;
+  background-color: #F76900;
 }
 
 body::-webkit-scrollbar {
@@ -274,7 +274,7 @@ input[type='number'] {
 
 .rightside {
   grid-area: rightside;
-  background-color: #e59455;
+  background-color: #C65500;
   padding: 5rem 2rem;
   align-items: flex-end;
 }
@@ -412,7 +412,7 @@ input[type='number'] {
 
 .footer {
   grid-area: footer;
-  background-color: #e59455;
+  background-color: #C65500;
 }
 @media only screen and (max-width: 75em) {
   .footer {
@@ -547,7 +547,7 @@ input[type='number'] {
   margin: 0rem 1rem;
   height: 2rem;
   width: 2rem;
-  fill: #cd5904;
+  fill: #F76900;
 }
 .top__item-price {
   grid-area: price;
@@ -577,7 +577,7 @@ input[type='number'] {
 .bottom__item-icon {
   width: 2.8rem;
   height: 2.8rem;
-  fill: #cd5904;
+  fill: #F76900;
   margin-left: 1rem;
 }
 .bottom__item-check {
@@ -643,7 +643,6 @@ input[type='radio'] {
   position: absolute;
   opacity: 0;
 }
-
 .bottom__item-no > span {
-  font-size: 19px;
-  }
+  font-size: 17px;
+}
