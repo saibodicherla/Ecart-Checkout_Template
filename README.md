@@ -9,7 +9,7 @@ To set up a shoppingCart progressive webApplication using Javascript, CSS3, HTML
 
 • Deployment is handled automatically using Github webhooks from AWS Amplify. 
 
-[![Deploy to AWS Amplify](https://oneclick.amplifyapp.com/button.svg)](https://master.d2ch2fvx0d4uah.amplifyapp.com/)
+[![Deploy to AWS Amplify](<a href="https://icons8.com/icon/heQa_XKLT3nf/amazon">Amazon icon by Icons8</a>)](https://master.d2ch2fvx0d4uah.amplifyapp.com/)
 
 
 ## 👷Building and Running
