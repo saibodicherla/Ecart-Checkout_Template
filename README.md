@@ -7,7 +7,9 @@ To set up a shoppingCart progressive webApplication using Javascript, CSS3, HTML
 
 ## 🚢 Deploying to AWS
 
-• Deployment is handled automatically using Github webhooks from[<img src="https://img.icons8.com/color/48/000000/amazon.png">](http://cart-template-web.s3-website-eu-west-1.amazonaws.com/)
+• Deployment is handled automatically using Github webhooks from AWS S3. 
+
+[<img src="https://img.icons8.com/color/144/000000/amazon.png">](http://cart-template-web.s3-website-eu-west-1.amazonaws.com/)
 
 
 ## 👷Building and Running
